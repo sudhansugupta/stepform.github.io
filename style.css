@@ -89,6 +89,15 @@
 	display: flex;
 	justify-content: center;
 }
+.textadjust_1 .fa{
+	font-size: 70px !important;
+	color: green !important;
+	margin-top: -30px !important;
+}
+.textadjust_1 h3{
+	font-size: 30px !important;
+	color: blue !important;
+}
 .person_det{
 	justify-content: center !important;
 	margin-top: 60px !important;
@@ -181,8 +190,8 @@
 	font-weight: bold !important;
 }
 .border_box{
-	height: 300px !important;
-	width: 700px !important;
+	height: 280px !important;
+	width: 650px !important;
 	border: 1px solid transparent !important;
 	margin-top: 100px !important;
 	background-color:whitesmoke !important ;
@@ -293,6 +302,15 @@
 .form{
 	justify-content: center;
 }
+.textadjust_1 .fa{
+	font-size: 40px !important;
+	color: green !important;
+	margin-top: -10px !important;
+}
+.textadjust_1 h3{
+	font-size: 20px !important;
+	color: blue !important;
+}
 .person_det{
 	margin-top: 30px !important;
 	justify-content: center !important;
@@ -354,6 +372,7 @@
 	text-align: center !important;
 	font-weight: bold;
 }
+
 .box_part2 p{
 	font-size: 12px !important;
 	margin-bottom: 30px !important;

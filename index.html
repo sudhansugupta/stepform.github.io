@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -52,7 +53,7 @@
      <div class="xxx justify-content-center ">
               <form class="row">
                 <div class="col-lg-9  col-md-9 col-sm-7 col-10  d-block mx-auto">
-                  <input class="col-lg-9 col-10  " type="text" class=" form-control " id="autoSizingInput" placeholder="please enter your zip code">
+                  <input class="col-lg-9 col-10  " type="number" class=" form-control " id="autoSizingInput" placeholder="please enter your zip code">
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-10 d-block mx-auto pe-auto justify-content-center mt-3  ">
                   <button class="btn_1 btn-lg  text-white fw-bolder" type="button" onclick="shows_form_part(2)"> NEXT</button>
@@ -67,7 +68,7 @@
          <div class="form justify-content-center">
               <form class="row d-flex mx-auto justify-content-center ">
                 <div class="col-lg-9 col-md-9 col-sm-7 col-10 d-block mx-auto">
-               <input type="text" class="form-control " id="autoSizingInput" placeholder="please enter your zip code">
+               <input type="text" class="form-control " id="autoSizingInput" placeholder=" enter your city name">
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-10 d-block mx-auto pe-auto ">
                  <button class="btn_1 text-white fw-bolder" type="button" onclick="shows_form_part(3)">NEXT</button>
@@ -86,16 +87,70 @@
      <div class="form justify-content-center">
               <form class="row d-flex mx-auto justify-content-center ">
                 <div class="col-lg-9 col-md-9 col-sm-7 col-10 d-block mx-auto">
-               <input type="text" class="form-control " id="autoSizingInput" placeholder="please enter your zip code">
+               <input type="text" class="form-control " id="autoSizingInput" placeholder=" enter your first name">
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-10 d-block mx-auto pe-auto ">
-                 <button class="btn_1  text-white fw-bolder" type="button" onclick="submit_form()">SUBMIT</button>
+                 <button class="btn_1  text-white fw-bolder" type="button" onclick="shows_form_part(4)">NEXT</button>
                 </div>
            <button class="textback col-6 btn "  type="button" onclick="shows_form_part(2)">← back</button>
           </div>
         </form>
         </div>
 </form>
+
+
+  <div id="form_part4">
+    
+     <div class="form justify-content-center">
+              <form class="row d-flex mx-auto justify-content-center ">
+                <div class="col-lg-9 col-md-9 col-sm-7 col-10 d-block mx-auto">
+               <input type="text" class="form-control " id="autoSizingInput" placeholder=" enter your last name">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-10 d-block mx-auto pe-auto ">
+                 <button class="btn_1  text-white fw-bolder" type="button" onclick="shows_form_part(5)">NEXT</button>
+                </div>
+           <button class="textback col-6 btn "  type="button" onclick="shows_form_part(3)">← back</button>
+          </div>
+        </form>
+        </div>
+</form>
+
+  <div id="form_part5">
+    
+     <div class="form justify-content-center">
+              <form class="row d-flex mx-auto justify-content-center ">
+                <div class="col-lg-9 col-md-9 col-sm-7 col-10 d-block mx-auto">
+               <input type="text" class="form-control " id="autoSizingInput" placeholder=" enter your phone number">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-10 d-block mx-auto pe-auto ">
+                 <button class="btn_1  text-white fw-bolder" type="button" onclick="shows_form_part(6) ">SUBMIT</button>
+                </div>
+           <button class="textback col-6 btn "  type="button" onclick="shows_form_part(4)">← back</button>
+          </div>
+        </form>
+        </div>
+</form>
+
+  <div id="form_part6">
+    
+     <div class="form justify-content-center">
+              <form class="row d-flex mx-auto justify-content-center ">
+                <div class="col-lg-9 col-md-9 col-sm-7 col-10 d-block mx-auto">
+                	<div class="textadjust_1">
+                <i class="fa fa-check" aria-hidden="true"></i> <h3>thank you for submit</h3></div>
+
+                </div>
+               <!-- <div class="col-lg-5 col-md-3 col-sm-3 col-10 d-block mx-auto pe-auto ">
+                 <button class="btn_1  text-white fw-bolder" type="button" onclick="submit_form()">SUBMIT</button>
+                </div>
+           --->
+          </div>
+        </form>
+        </div>
+</form>
+
+
+
 </div>
           
      <!------------------------------------ form sec ----------------------------------->
@@ -256,7 +311,7 @@
              </div>
              <div class="row">
                <div class="col-lg-5  col-9 mx-auto border_box" >
-                 <div class="center_ali justify-content-center align-content-center mt-3">
+                 <div class="center_ali justify-content-center align-content-center mt-2">
               
               <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -364,16 +419,28 @@
                         </div>
  
                       </div>
+
                     </div>
+
                   </div>
+     <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
                 </div>
-              </div>
+
 
               </div>
+               </div>
              </div>
 
            </div>
            </div>
+
          </div>
          </div>
 
@@ -427,15 +494,17 @@
               </div>
             </div>
           </div>
-                
+                </form></div></div></div></div>
                   <!------------ footer end------------>
 
-   
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <!--js for step form---->
  <script type="text/javascript">
